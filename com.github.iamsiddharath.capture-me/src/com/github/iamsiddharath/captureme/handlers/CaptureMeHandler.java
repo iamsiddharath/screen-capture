@@ -14,7 +14,7 @@ public class CaptureMeHandler extends AbstractHandler {
 		IWorkbenchWindow window = HandlerUtil.getActiveWorkbenchWindowChecked(event);
 		MessageDialog.openInformation(
 				window.getShell(),
-				"Capture-me",
+				"Capture-me", 
 				"Hello, Eclipse world");
 		return null;
 	}
