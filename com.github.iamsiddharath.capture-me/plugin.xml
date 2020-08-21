@@ -10,7 +10,7 @@
       </category>
       <command
             categoryId="com.github.iamsiddharath.capture-me.commands.category"
-            name="Sample Command"
+            name="Capture Screenshot Now"
             id="com.github.iamsiddharath.capture-me.commands.sampleCommand">
       </command>
    </extension>
@@ -36,7 +36,7 @@
             locationURI="menu:org.eclipse.ui.main.menu?after=additions">
          <menu
                id="com.github.iamsiddharath.capture-me.menus.sampleMenu"
-               label="Sample Menu"
+               label="Screen Capture"
                mnemonic="M">
             <command
                   commandId="com.github.iamsiddharath.capture-me.commands.sampleCommand"
@@ -52,8 +52,8 @@
             <command
                   id="com.github.iamsiddharath.capture-me.toolbars.sampleCommand"
                   commandId="com.github.iamsiddharath.capture-me.commands.sampleCommand"
-                  icon="icons/sample.png"
-                  tooltip="Say hello world">
+                  icon="icons/capture.png"
+                  tooltip="Capture your Screen">
             </command>
          </toolbar>
       </menuContribution>
