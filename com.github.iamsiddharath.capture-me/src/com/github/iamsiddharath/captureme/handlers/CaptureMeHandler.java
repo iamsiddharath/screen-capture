@@ -28,25 +28,23 @@ public class CaptureMeHandler extends AbstractHandler {
 
 			if (flag) {
 				Thread.sleep(1000);
-				Robot r = new Robot(); 
-				String filePath = System.getProperty("user.home")+"/Desktop/Screen-capture/";
-	            SimpleDateFormat sdf = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss_sss");
-				
+				Robot r = new Robot();
+				String filePath = System.getProperty("user.home") + "/Desktop/Screen-capture/";
+				SimpleDateFormat sdf = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss_sss");
+
 				File folder = new File(filePath);
-				
-				if(!folder.exists()) {
+
+				if (!folder.exists()) {
 					folder.mkdir();
 				}
-				
-				
-	            String path = filePath+"Shot_"+sdf.format(new Date())+".jpg"; 
-	  
-	            Rectangle capture =  
-	            new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()); 
-	            BufferedImage Image = r.createScreenCapture(capture); 
-	            ImageIO.write(Image, "jpg", new File(path));
-	            MessageDialog.openInformation(window.getShell(), "Capture Me",
-						"Success! Screenshot is captured \n\n Location of Screen shot : "+path);
+
+				String path = filePath + "Shot_" + sdf.format(new Date()) + ".jpg";
+
+				Rectangle capture = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
+				BufferedImage Image = r.createScreenCapture(capture);
+				ImageIO.write(Image, "jpg", new File(path));
+				MessageDialog.openInformation(window.getShell(), "Capture Me",
+						"Success! Screenshot is captured \n\n Location of Screen shot : " + path);
 			}
 		} catch (Exception e) {
 		}
