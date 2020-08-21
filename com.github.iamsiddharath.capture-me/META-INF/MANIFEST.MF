@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Capture-me
+Bundle-SymbolicName: com.github.iamsiddharath.capture-me;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.github.iamsiddharath.capture_me.Activator
+Bundle-Vendor: GITHUB-IAMSIDDHARATH
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: com.github.iamsiddharath.capture-me
+Bundle-ActivationPolicy: lazy
